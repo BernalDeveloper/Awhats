@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="/design/styles/registro.css" rel="stylesheet">
+    <title>Registro</title>
+</head>
+<body class="text-center">
+    <div class="card">
+        <form class="form-signin"accept-charset="UTF-8" th:action="@{/save}" th:object="${cliente}" method="post">
+            <img src="design/img/tu_logo.png" alt="Tu Logo" width="100">
+            <h1 class="h3 mb-3 font-weight-normal">Regístrate</h1>
+            <input th:field="*{nombre}" type="text" name="name" class="form-control" placeholder="Nombre" required maxlength="50">
+            <input th:field="*{contrasena}" type="password" name="password" class="form-control" placeholder="Contraseña" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,20}$" title="La contrase�a debe tener entre 10 y 20 caracteres, al menos una letra mayúscula, un número y un carácter especial como @$!%*?&">
+            <input th:field="*{telefono}" type="tel" name="number" class="form-control" placeholder="Número de Celular" required minlength="10" maxlength="15">
+            <input th:field="*{email}" type="email" name="gmail" class="form-control" placeholder="Correo electrónico" required autofocus>
+            <input th:field="*{direccion}" type="text" name="address" id="location-input" placeholder="Dirección"/>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYLknVci17eLkgEYZ0H2OqKBCy_sk0pbM&libraries=places&callback=initAutocomplete" async defer></script>
+            <button class="btn btn-lg btn-primary" type="submit">Registrarse</button>
+            <a class="btn btn-lg btn-primary" href="/">Iniciar Sesión</a>
+            <img src="design/img/giphy.gif" class="additional-image" alt="Imagen Adicional">
+            <p class="mt-3 mb-3 text-muted">&copy; 2023</p>
+            <p class="mt-3 mb-3 text-muted">Creado por Oscar, Jesús y Brandon en 2023</p>
+        </form>
+    </div>
+    <script src="/scripts/graphic.js"></script>
+</body>
+</html>
