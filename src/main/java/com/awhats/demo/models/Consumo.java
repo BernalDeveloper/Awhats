@@ -11,7 +11,6 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="consumo")
-
 public class Consumo {
 
     @Id

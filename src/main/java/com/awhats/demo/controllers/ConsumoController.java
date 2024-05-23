@@ -33,6 +33,6 @@ public class ConsumoController {
         Cliente cliente = srvc.findById(id);
         model.addAttribute("consumos", consumos);
         model.addAttribute("cliente", cliente);
-        return "Pruebas";
+        return "Dashboard";
     }
 }

@@ -9,7 +9,8 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="clientes")
 public class Cliente{
-        //Aqui son objetos con propiedades para el manejo del programa web
+
+    //Aqui son objetos con propiedades para el manejo del programa web
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;

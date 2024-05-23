@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.awhats.demo.models.Consumo;
 import java.util.List;
 
-
 @Repository
 public interface IConsumo extends JpaRepository<Consumo, Integer>{
     List<Consumo> findById(int id);

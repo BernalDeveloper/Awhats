@@ -52,7 +52,7 @@ var myBarChart = new Chart(ctx, {
     data: data,
     options: options
 });
-
+//Autocompletado de dirección.
 function initAutocomplete() {
   const input = document.getElementById('location-input');
   const autocomplete = new google.maps.places.Autocomplete(input, {

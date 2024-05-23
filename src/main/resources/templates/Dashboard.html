@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="/design/styles/dashboard.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYLknVci17eLkgEYZ0H2OqKBCy_sk0pbM&libraries=places&callback=initAutocomplete" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="main">
+            <li class="active" onclick="mostrarHTML('principal-content')">
+                <a href="#">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="mostrarHTML('profile-content')">
+                    <i class="fas fa-user"></i>
+                    <span>Perfil</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="mostrarHTML('graphic-content')">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Estadisticas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="mostrarHTML('information-content')">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Contactos</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="/">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user-info">
+                <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <img src="/design/img/perfil.png" alt="">
+            </div>
+        </div>
+        <div th:replace="/containers/principal-content.html"></div>
+        <div th:replace="/containers/profile-content.html" ></div>
+        <div th:replace="/containers/graphic-content.html" ></div>
+        <div th:replace="/containers/information-content.html" ></div>
+    </div>
+    <script src="/scripts/graphic.js"></script>
+</body>
+</html>
