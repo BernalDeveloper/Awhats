@@ -30,6 +30,7 @@ public class ClienteController {
     public String login(){
         return "Index";
     }
+
     //Aqui se maneja el manejo de direcciones y las condicionales del modelo.
     @PostMapping("/login")
     public String ingresar(@RequestParam String Number, @RequestParam String Password, Model model){
