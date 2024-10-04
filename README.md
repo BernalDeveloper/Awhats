@@ -2,4 +2,4 @@ Dashboard para visualizacion y edicion de datos de un proyecto de software embeb
 
 Dashboard for visualization and editing of data of an embedded software project, for the correct execution of this project it is necessary to have at least two tables in the database, one for users with 6 attributes and another for monthly consumption with 8 attributes, both tables are related by the user ID.
 
-[![Login.jpg](https://i.postimg.cc/8zhnQQM0/Login.jpg)](https://postimg.cc/cvLcwzDR)
+[![Home.jpg](https://i.postimg.cc/1z7dM0pm/Home.jpg)](https://postimg.cc/2qvTSZcM)
