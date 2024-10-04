@@ -1,0 +1,37 @@
+<div class="content-container" name="profile-content" style="display: none;">
+    <form th:action="@{/update}" th:object="${cliente}" method="post">
+        <div class="card-container">
+            <div class="card-header">
+                <h3>Datos personales</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <input th:field="*{id}" type="hidden" class="form-control">
+                </div>
+                <div class="form-group mb-2">
+                    <label><b>Nombre</b></label>
+                    <input th:field="*{nombre}" type="text" class="form-control">
+                </div>
+                <div class="form-group mb-2">
+                    <label><b>Nueva Contraseña</b></label>
+                    <input th:field="*{contrasena}" type="text" class="form-control">
+                </div>
+                <div class="form-group mb-2">
+                    <label><b>Telefono</b></label>
+                    <input th:field="*{telefono}" type="text" class="form-control">
+                </div>
+                <div class="form-group mb-2">
+                    <label><b>Email</b></label>
+                    <input th:field="*{email}" type="text" class="form-control">
+                </div>
+                <div class="form-group mb-2">
+                    <label><b>Dirección</b></label>
+                    <input th:field="*{direccion}" type="text" class="form-control" id="location-input">
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-success mt-3">Guardar</button>
+            </div>
+        </div>
+    </form>
+</div>

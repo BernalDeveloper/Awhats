@@ -1,0 +1,74 @@
+body {
+    background: #222421 url('background-pattern.png') repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-signin {
+    text-align: center;
+}
+
+.form-signin img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.form-signin h1 {
+    font-size: 24px;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    border: none;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #45A049;
+}
+
+.additional-image {
+    max-width: 50px;
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+#location-input {
+    border: 2px solid #3367d6;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+}
+
+#location-input::placeholder {
+    color: #3367d6;
+}

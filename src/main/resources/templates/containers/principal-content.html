@@ -1,0 +1,72 @@
+<div class="card-container content-container" name="principal-content">
+    <h3 class="main-title">Datos del día</h3>
+    <div class="card-wrapper">
+        <div class="payment-card">
+            <div class="card-header">
+                <div class="ammount">
+                    <span class="title">Costo acumulado</span>
+                    <span class="ammount-value"> 600</span>
+                </div>
+                <i class="fas fa-dollar-sign icon"></i>
+            </div>
+            <span class="card-detail">**** **** **** 5286</span>
+        </div>
+        <div class="payment-card">
+            <div class="card-header">
+                <div class="ammount">
+                    <span class="title">Costo acumulado</span>
+                    <span class="ammount-value"> 600</span>
+                </div>
+                <i class="fas fa-dollar-sign icon"></i>
+            </div>
+            <span class="card-detail">**** **** **** 6397</span>
+        </div>
+        <div class="payment-card">
+            <div class="card-header">
+                <div class="ammount">
+                    <span class="title">Costo acumulado</span>
+                    <span class="ammount-value"> 600</span>
+                </div>
+                <i class="fas fa-dollar-sign icon"></i>
+            </div>
+            <span class="card-detail">**** **** **** 7418</span>
+        </div>
+        <div class="payment-card">
+            <div class="card-header">
+                <div class="ammount">
+                    <span class="title">Costo acumulado</span>
+                    <span class="ammount-value"> 600</span>
+                </div>
+                <i class="fas fa-dollar-sign icon"></i>
+            </div>
+            <span class="card-detail">**** **** **** 8529</span>
+        </div>
+    </div>
+</div>
+<div class="table-wrapper content-container" name="principal-content">
+    <h3 class="main-title">Tabla de datos</h3>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Mes</th>
+                    <th>Costo</th>
+                    <th>Descuento</th>
+                    <th>Costo total</th>
+                    <th>Descripción</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="consumo:${consumos}">
+                    <td th:text="${consumo.mes}"></td>
+                    <td th:text="${consumo.costo}"></td>
+                    <td th:text="${consumo.descuento}"></td>
+                    <td th:text="${consumo.costo_t}"></td>
+                    <td th:text="${consumo.descripcion}"></td>
+                    <td><button>Revisar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
