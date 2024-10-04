@@ -5,3 +5,5 @@ Dashboard for visualization and editing of data of an embedded software project,
 [![Home.jpg](https://i.postimg.cc/1z7dM0pm/Home.jpg)](https://postimg.cc/2qvTSZcM)
 
 [![Profile.png](https://i.postimg.cc/m26FLtNc/Profile.png)](https://postimg.cc/sv72KfLy)
+
+[![Graphic.png](https://i.postimg.cc/mk1W7XJW/Graphic.png)](https://postimg.cc/64KPX0BM)
